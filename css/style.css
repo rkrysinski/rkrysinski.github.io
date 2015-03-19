@@ -160,8 +160,8 @@ footer {
   margin: 0;
 }
 
-.posts a {  
-
+.posts ul li {  
+    text-align: center;
 }
 
 
@@ -238,6 +238,7 @@ p {
     color: #444;
     float: left;
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 .post-header a:hover {
