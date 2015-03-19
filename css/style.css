@@ -8,6 +8,11 @@ html, body{
     text-rendering: optimizeLegibility;
 }
 
+.post p img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Custom container */
 @media (max-width: 979px) {
@@ -135,15 +140,20 @@ footer {
   margin: 0 0 10px 0;
 }
 .posts article {
-  height: 85px;
+  height: 150px;
 }
 .posts .tags {
   padding-right: 40px;
 }
 
+.post-summary {
+    margin: 0 40px 0 40px;
+    font-size: 0.90em;
+    text-align: justify;
+}
 
 .posts {
-  text-align: center;
+  //text-align: center;
 }
 
 .posts ul {  
@@ -203,7 +213,7 @@ p {
 }
 
 .post-header {
-  padding: 20px 40px 20px 40px;
+  padding: 7px 40px 20px 40px;
   margin-bottom: 5px;
 }
 
@@ -213,6 +223,7 @@ p {
 
 .post-header .single-post-title {
     font-size: 1.8em;
+    margin-top:20px;
 }
 
 /*
