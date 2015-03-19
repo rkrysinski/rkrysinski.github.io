@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Posts on rkrysinski </title>
+    <link>http://rkrysinski.github.io/post/</link>
+    <language>en-us</language>
+    <author>Roman Krysinski</author>
+    <updated>2015-03-18 10:27:55 &#43;0100 CET</updated>
+    
+    <item>
+      <title>Java8 - the game changer</title>
+      <link>http://rkrysinski.github.io/post/java8-the-game-changer/</link>
+      <pubDate>Wed, 18 Mar 2015 10:27:55 CET</pubDate>
+      <author>Roman Krysinski</author>
+      <guid>http://rkrysinski.github.io/post/java8-the-game-changer/</guid>
+      <description>&lt;p&gt;Under construction, commint soon.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
