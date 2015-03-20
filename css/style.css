@@ -285,8 +285,11 @@ a:hover {
 }
 
 .container li {  
-  list-style: none;
   line-height: 25px;
+}
+
+section#main li {
+    list-style: none;
 }
 
 #title {
