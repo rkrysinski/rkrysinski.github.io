@@ -5,7 +5,26 @@
     <link>http://rkrysinski.github.io/</link>
     <language>en-us</language>
     <author>Roman Krysinski</author>
-    <updated>2015-03-18 10:27:55 &#43;0100 CET</updated>
+    <updated>2015-03-20 09:56:54 &#43;0100 CET</updated>
+    
+    <item>
+      <title>Why it’s worth to contribute to opensource</title>
+      <link>http://rkrysinski.github.io/post/why-its-worth-to-contribute-to-opensource/</link>
+      <pubDate>Fri, 20 Mar 2015 09:56:54 CET</pubDate>
+      <author>Roman Krysinski</author>
+      <guid>http://rkrysinski.github.io/post/why-its-worth-to-contribute-to-opensource/</guid>
+      <description>&lt;p&gt;If you ever wondered why people are spending their free time, after hours, in the nights contributing to opensource, then this article might give you some answers in this regards.
+Besides some obvious reasons like you can learn something, I noticed two key factors that were not so obvious for me before.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;There is a freedom in choosing the topic you want to handle. I like programing and I like what I’m doing at work, however sometimes projects are not as fascinating as I would expect. I’m not sure how about you, but I think in most of cased people simply cannot do exactly what they love at work all the time, for various reasons. If you do however then you are a lucky one, but for me it’s not the case. The opensource world is very wide, there are tons of projects out there that solve problems, bring the value to the community etc. If you like programing, some specific technology, language or topics, there is for sure an opensource project for you - you simply can choose one and do what you like. Compare it to the case where you can pick a cake and get the cherries all the time.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Constructive feedback is one of the most important things if you want to do progress. Most people tend to mislead constructive feedback with criticism, but you have to learn to distinguish between these two, and recognize it properly. Sometimes it’s hard for me as well, it really depends upon the quality of feedback, but if you are confident with what you know, who you are and have open attitude you’ll learn what is what. In opensource world, the feedback may take different forms. My favorite one is rework. The biggest complement for me is when my code becomes part of the official stream without additional changes, but there are features that require rework or key owners introduces some refactoring, and this I’m considering as constructive feedback. You can learn from this, because you see what was done well, and what could be done better, thus you can take an advantage from this and does it better next time. It’s as simple as saying: you would be better playing with betters.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I’m sure there are other profits from opensource contribution that you may face, but I encourage you to try on your own. Take a moment and think about what you like the most, look around and pick one for you, you are risking only your free time, and that you may learn something new.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Java8 - the game changer</title>

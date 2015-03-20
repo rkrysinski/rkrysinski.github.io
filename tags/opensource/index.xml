@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Posts on rkrysinski </title>
-    <link>http://rkrysinski.github.io/post/</link>
+      <title>Opensource on rkrysinski </title>
+    <link>http://rkrysinski.github.io/tags/opensource/</link>
     <language>en-us</language>
     <author>Roman Krysinski</author>
     <updated>2015-03-20 09:56:54 &#43;0100 CET</updated>
@@ -23,26 +23,6 @@ Besides some obvious reasons like you can learn something, I noticed two key fac
 &lt;/ol&gt;
 
 &lt;p&gt;I’m sure there are other profits from opensource contribution that you may face, but I encourage you to try on your own. Take a moment and think about what you like the most, look around and pick one for you, you are risking only your free time, and that you may learn something new.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Java8 - the game changer</title>
-      <link>http://rkrysinski.github.io/post/java8-the-game-changer/</link>
-      <pubDate>Wed, 18 Mar 2015 10:27:55 CET</pubDate>
-      <author>Roman Krysinski</author>
-      <guid>http://rkrysinski.github.io/post/java8-the-game-changer/</guid>
-      <description>&lt;p&gt;Couple of weeks ago, I have won a book on &lt;a href=&#34;http://torun.jug.pl/&#34;&gt;Torun JUG&lt;/a&gt; meetup, where I could pick one by myself :) My natural choice was to get something from Java, and after a while I come up with: &amp;ldquo;&lt;em&gt;Java 8 Lambdas.
-Functional Programming for the Masses&lt;/em&gt;&amp;rdquo; by Richard Warburton.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://rkrysinski.github.io/images/2015/03/18/java8-lambdas.gif&#34; alt=&#34;example image&#34; title=&#34;Java 8 Lambdas. Functional Programming for the Masses&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;That was a perfect match. This book is very well crafted, easy to understood, it has lots of helpful examples and meaningful pictures that help to visualize complex topics, thus it&amp;rsquo;s easy to remember. This book is written in a way, that after you finish with it, you can easily go back and find topics you want.&lt;/p&gt;
-
-&lt;p&gt;The features brought by Java 8 are really a game changer. From years java syntax has not changed much, and while one could even not note Java 7 in that regards, version 8 brought refreshment. If you want to be more productive, make your code more readable and clean, you simply cannot walk next to Java8 features. The Lambda expressions as well as streams helps to reduce the boiler plate in the code and makes it simpler. There is a lot more to use, but the bottom line is that, once you try it, you will never want to go back.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m going to put some thoughts on the actual content of this book in the nearest future.&lt;/p&gt;
 </description>
     </item>
     
