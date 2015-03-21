@@ -181,6 +181,9 @@ a.github{
 	#navbar-buttons {
 	  margin-right: 0;
 	}	
+	.post-margin {
+		margin: 20px 0px 0 0px;	
+	}
 }
 
 footer { 
