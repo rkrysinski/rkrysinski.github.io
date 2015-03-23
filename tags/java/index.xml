@@ -6,8 +6,26 @@
     <description>Recent content in Java on rkrysinski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2015 10:27:55 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2015 21:55:46 +0100</lastBuildDate>
     <atom:link href="http://rkrysinski.pl/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>JUnit tests may improve.... you</title>
+      <link>http://rkrysinski.pl/post/junit-tests-may-improve-you/</link>
+      <pubDate>Mon, 23 Mar 2015 21:55:46 +0100</pubDate>
+      
+      <guid>http://rkrysinski.pl/post/junit-tests-may-improve-you/</guid>
+      <description>&lt;p&gt;At first glance we may state that JUnit tests are good because they test our code, they are good because they prove that what we did works, but that is only one side of it.&lt;/p&gt;
+
+&lt;p&gt;A while ago I was told to write test for old legacy code and after couple of days I end up with 20% coverage, simply speaking I failed. When my tests started to look like Frankenstein I told to myself that it makes no sense. I was wondering what&amp;rsquo;s wrong with me, and came into conclusion that the problem is somewhere else. It was like a snow ball coming into my face, the production code was simple not object oriented enough and not well crafted. So, if you ever come into conclusion that writing some JUnit test is difficult, it may mean you&amp;rsquo;ve just got a feedback to your code.&lt;/p&gt;
+
+&lt;p&gt;When you write tests long enough, you will notice that you code become more modular, divided into layers, you start using dependency injection and suddenly the code is simple to cover with tests. But that&amp;rsquo;s not all, good JUnit tests might be better than javadocs. When you want to learn about some API usage, tests might be a good place to start, of course javadocs as well, however an example, is like &amp;ldquo;a picture&amp;rdquo; - worth of thousand words. So going further, tests need to be simple and readable. Each test has to be focused on testing one case, it is also a good practice to divide it into Given/When/Then section, use  mocking techniques and advanced assertions (like catch-exception, assertj or hamcrest) that increases the readability a lot, and don&amp;rsquo;t worry if test name is more than 20 characters long.&lt;/p&gt;
+
+&lt;p&gt;Is that all? Well, if you code and test long enough within you domain e.g. databases or APIs, you should try to write JUnit test first. Soon you will notice that it&amp;rsquo;s not the code that comes first, it&amp;rsquo;s the design that you have to envision in first place.&lt;/p&gt;
+
+&lt;p&gt;Putting all this together: writing JUnit tests not only can improve your programming skills, but also can improve the way you are designing your code.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Java8 - the game changer</title>
