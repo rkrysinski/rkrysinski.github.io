@@ -6,8 +6,129 @@
     <description>Recent content in Thoughts on rkrysinski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2015 21:55:46 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2015 22:48:17 +0200</lastBuildDate>
     <atom:link href="http://rkrysinski.pl/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Look and Feel</title>
+      <link>http://rkrysinski.pl/post/look-and-feel/</link>
+      <pubDate>Tue, 31 Mar 2015 22:48:17 +0200</pubDate>
+      
+      <guid>http://rkrysinski.pl/post/look-and-feel/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Attention to design details implies that the same care and attention has been spent on the other (less visible) parts of the product.&lt;/strong&gt;
+&lt;div style=&#34;text-align: right;&#34;&gt;
+&lt;a href=&#34;http://www.alistapart.com/articles/indefenseofeyecandy&#34;&gt;ALA: In Defense of Eye Candy&lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;Creating a Graphical User Interface is always a challenge, because people have different sense of aesthetic. There are however few guidelines that if you stick to, there is a good chance you are successful. This article is gist of the following books modulo my experience:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://techbus.safaribooksonline.com/9780321550033&#34;&gt;Visual Design for the Modern Web&lt;/a&gt; Penny McIntire&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://techbus.safaribooksonline.com/0131345559&#34;&gt;The Design of Sites: Patterns for Creating Winning Web Sites, Second Edition&lt;/a&gt; Douglas K. van Duyne; James A. Landay; Jason I. Hong&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://techbus.safaribooksonline.com/0735622523&#34;&gt;Easy Web Design&lt;/a&gt; Mary Millhollon; Jeff Castrina; Leslie Lothamer&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Some of the techniques described in those books are outdated, because the web design accelerated from the time they were written, but there are things that are still valid.&lt;/p&gt;
+
+&lt;h2 id=&#34;visual-harmony:bb8ea8d88036e657a523d86a8bc01b84&#34;&gt;&lt;strong&gt;Visual Harmony&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;This is one of the most important rules in my opinion. Visual harmony defines whether or not a page looks good. An effective design is a balance between serenity and stimulation. The page needs to be serene enough just to convince the user it’s easy to use, but in other hand it also needs to be stimulating enough so end user wants to use it. If page is too serene then it might become boring, too much of stimulation and the page might become visually chaotic. To illustrate this rule, let’s stick to the architecture for a moment. Which one of the following has more to do with harmony?
+&lt;img src=&#34;http://rkrysinski.pl/images/2015/03/31/buildings.jpg&#34; alt=&#34;example image&#34; title=&#34;Buildings&#34; /&gt;
+
+I think you’ve already knoaw the answer, it’s quite intuitive. The right balance between serenity and stimulation is the key to reach visual harmony.&lt;/p&gt;
+
+&lt;h4 id=&#34;techniques-for-providing-visual-harmony:bb8ea8d88036e657a523d86a8bc01b84&#34;&gt;&lt;strong&gt;Techniques for providing Visual Harmony&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Repeat Elements&lt;/strong&gt; - In general, repetition of colors, layouts, blocks of elements, the same graphics, fonts, kinds of buttons etc. provide visual consistency. Repetition of elements is like a rhythm in music.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Manipulate Contrast&lt;/strong&gt; - You can use contrast either to divide page into logical sections or highlight important elements on the page. It’s the very basic instrument to provide visual harmony.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chunk Related Information&lt;/strong&gt; - Organize related elements on page into chunks, this also helps to make the overall impression that page is simple. One of the options would be to take &lt;a href=&#34;http://getbootstrap.com/&#34;&gt;boostrap&lt;/a&gt; that contains components that you can reuse.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Align Elements&lt;/strong&gt; - Align as much as possible. The more you align, the more consistent page looks.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://rkrysinski.pl/images/2015/03/31/form_aligned.png&#34; alt=&#34;example image&#34; title=&#34;aligned form&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;clear-forms:bb8ea8d88036e657a523d86a8bc01b84&#34;&gt;&lt;strong&gt;Clear forms&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h4 id=&#34;some-important-things-to-keep-in-mind:bb8ea8d88036e657a523d86a8bc01b84&#34;&gt;Some important things to keep in mind:&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Put the focus on the first element on the form.&lt;/li&gt;
+&lt;li&gt;When describing the field forms, use familiar language so users do not have to figure out what it is about.&lt;/li&gt;
+&lt;li&gt;Required fields must be marked on the form.&lt;/li&gt;
+&lt;li&gt;If some field has special format, prefill the input with example text, or force the input to be exactly what you need.&lt;/li&gt;
+&lt;li&gt;Reduce the amount of typing required, use suggestion drop down lists - simply do not ask users for the information you’ve already might have.&lt;/li&gt;
+&lt;li&gt;Intelligent error handling - don’t wait till user submit the form to show the error, in case you already know that something is not correct.&lt;/li&gt;
+&lt;li&gt;Make all functionality available from a keyboard.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In general, forms needs to be simple, clear, visually well-aligned, and what’s most important intuitive.&lt;/p&gt;
+
+&lt;h2 id=&#34;progress-on-the-page:bb8ea8d88036e657a523d86a8bc01b84&#34;&gt;&lt;strong&gt;Progress on the page&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Not so long time ago, when almost all actions on the page were displayed as the result of its reload, the fact of progressing was indicated by the browser. It was good enough for users to sit tight and wait for the result. Nowadays, the technology allows for the page to load content through ajax/websocket and the progress of the operation is not so obvilus. Without progress indicator end users might be frustrated waiting for result, and wondering if the operation was already started or not.&lt;/p&gt;
+
+&lt;h2 id=&#34;error-messages:bb8ea8d88036e657a523d86a8bc01b84&#34;&gt;&lt;strong&gt;Error messages&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Good error messages can contribute to building good page reputation.
+&lt;img src=&#34;http://rkrysinski.pl/images/2015/03/31/funny_errors_23.jpg&#34; alt=&#34;example image&#34; title=&#34;error message&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h4 id=&#34;good-error-messages-should-consist-of-the-following-information:bb8ea8d88036e657a523d86a8bc01b84&#34;&gt;Good error messages should consist of the following information:&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;What happened&lt;/li&gt;
+&lt;li&gt;Why it happened&lt;/li&gt;
+&lt;li&gt;What should user do in order to correct the problem&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;colors:bb8ea8d88036e657a523d86a8bc01b84&#34;&gt;&lt;strong&gt;Colors&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h4 id=&#34;choose-one-or-two-main-colors-and-use-scheme-generators-to-figure-out-rest-of-colors-for-you-page:bb8ea8d88036e657a523d86a8bc01b84&#34;&gt;Choose one or two main colors and use scheme generators to figure out rest of colors for you page:&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://colorschemedesigner.com/&#34;&gt;http://colorschemedesigner.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.colorschemer.com/online.html&#34;&gt;http://www.colorschemer.com/online.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;stimulation:bb8ea8d88036e657a523d86a8bc01b84&#34;&gt;&lt;strong&gt;Stimulation&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Audio effects&lt;/strong&gt; - this is not a visible trend in the web, but I think adding a subtle sounds for specific actions on the page might become a trick that makes the difference.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Paralaxing&lt;/strong&gt; - &lt;a href=&#34;http://www.alquimiawrg.com&#34;&gt;http://www.alquimiawrg.com&lt;/a&gt; - open and move mouse over the page&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scrolling effects&lt;/strong&gt; -  &lt;a href=&#34;http://www.sony.com/be-moved&#34;&gt;http://www.sony.com/be-moved&lt;/a&gt; - open it and just scroll&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fancy input texts&lt;/strong&gt; etc - &lt;a href=&#34;http://tympanus.net/Development/TextInputEffects&#34;&gt;http://tympanus.net/Development/TextInputEffects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fancy buttons&lt;/strong&gt; etc - &lt;a href=&#34;http://tympanus.net/Development/ButtonStylesInspiration&#34;&gt;http://tympanus.net/Development/ButtonStylesInspiration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;and probably many many more…. the human imagination is endless.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;here-are-some-website-examples-nontrivial-and-creative-in-terms-of-stimulation:bb8ea8d88036e657a523d86a8bc01b84&#34;&gt;Here are some website examples, nontrivial and creative in terms of stimulation:&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The DNA project: &lt;a href=&#34;http://jviewz.com&#34;&gt;http://jviewz.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;FUTURESTATES - &lt;a href=&#34;http://futurestates.tv&#34;&gt;http://futurestates.tv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;summing-up:bb8ea8d88036e657a523d86a8bc01b84&#34;&gt;&lt;strong&gt;Summing up&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;Designing web page is a challenging task. There are few rules that you can stick but that does not guarantee a success in 100%. If it comes to me, I’m following three rules:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;visual harmony&lt;/li&gt;
+&lt;li&gt;consistency&lt;/li&gt;
+&lt;li&gt;intuition :)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bonus: if you are looking for inspirations, take a look at &lt;a href=&#34;http://tympanus.net/codrops/&#34;&gt;codrops&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>JUnit tests may improve.... you</title>

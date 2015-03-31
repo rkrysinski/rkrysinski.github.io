@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on rkrysinski</title>
-    <link>http://rkrysinski.pl/post/</link>
-    <description>Recent content in Posts on rkrysinski</description>
+    <title>Gui on rkrysinski</title>
+    <link>http://rkrysinski.pl/tags/gui/</link>
+    <description>Recent content in Gui on rkrysinski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 31 Mar 2015 22:48:17 +0200</lastBuildDate>
-    <atom:link href="http://rkrysinski.pl/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://rkrysinski.pl/tags/gui/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Look and Feel</title>
@@ -127,63 +127,6 @@ I think you’ve already knoaw the answer, it’s quite intuitive. The right bal
 &lt;/ul&gt;
 
 &lt;p&gt;Bonus: if you are looking for inspirations, take a look at &lt;a href=&#34;http://tympanus.net/codrops/&#34;&gt;codrops&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>JUnit tests may improve.... you</title>
-      <link>http://rkrysinski.pl/post/junit-tests-may-improve-you/</link>
-      <pubDate>Mon, 23 Mar 2015 21:55:46 +0100</pubDate>
-      
-      <guid>http://rkrysinski.pl/post/junit-tests-may-improve-you/</guid>
-      <description>&lt;p&gt;At first glance we may state that JUnit tests are good because they test our code, they are good because they prove that what we did works, but that is only one side of it.&lt;/p&gt;
-
-&lt;p&gt;A while ago I was told to write test for old legacy code and after couple of days I end up with 20% coverage, simply speaking I failed. When my tests started to look like Frankenstein I told to myself that it makes no sense. I was wondering what&amp;rsquo;s wrong with me, and came into conclusion that the problem is somewhere else. It was like a snow ball coming into my face, the production code was simple not object oriented enough and not well crafted. So, if you ever come into conclusion that writing some JUnit test is difficult, it may mean you&amp;rsquo;ve just got a feedback to your code.&lt;/p&gt;
-
-&lt;p&gt;When you write tests long enough, you will notice that you code become more modular, divided into layers, you start using dependency injection and suddenly the code is simple to cover with tests. But that&amp;rsquo;s not all, good JUnit tests might be better than javadocs. When you want to learn about some API usage, tests might be a good place to start, of course javadocs as well, however an example, is like &amp;ldquo;a picture&amp;rdquo; - worth of thousand words. So going further, tests need to be simple and readable. Each test has to be focused on testing one case, it is also a good practice to divide it into Given/When/Then section, use  mocking techniques and advanced assertions (like catch-exception, assertj or hamcrest) that increases the readability a lot, and don&amp;rsquo;t worry if test name is more than 20 characters long.&lt;/p&gt;
-
-&lt;p&gt;Is that all? Well, if you code and test long enough within you domain e.g. databases or APIs, you should try to write JUnit test first. Soon you will notice that it&amp;rsquo;s not the code that comes first, it&amp;rsquo;s the design that you have to envision in first place.&lt;/p&gt;
-
-&lt;p&gt;Putting all this together: writing JUnit tests not only can improve your programming skills, but also can improve the way you are designing your code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Java8 - the game changer</title>
-      <link>http://rkrysinski.pl/post/java8-the-game-changer/</link>
-      <pubDate>Wed, 18 Mar 2015 10:27:55 +0100</pubDate>
-      
-      <guid>http://rkrysinski.pl/post/java8-the-game-changer/</guid>
-      <description>&lt;p&gt;Couple of weeks ago, I have won a book on &lt;a href=&#34;http://torun.jug.pl/&#34;&gt;Torun JUG&lt;/a&gt; meetup, where I could pick one by myself :) My natural choice was to get something from Java, and after a while I come up with: &amp;ldquo;&lt;em&gt;Java 8 Lambdas.
-Functional Programming for the Masses&lt;/em&gt;&amp;rdquo; by Richard Warburton.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://rkrysinski.pl/images/2015/03/18/java8-lambdas.gif&#34; alt=&#34;example image&#34; title=&#34;Java 8 Lambdas. Functional Programming for the Masses&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;That was a perfect match. This book is very well crafted, easy to understood, it has lots of helpful examples and meaningful pictures that help to visualize complex topics, thus it&amp;rsquo;s easy to remember. This book is written in a way, that after you finish with it, you can easily go back and find topics you want.&lt;/p&gt;
-
-&lt;p&gt;The features brought by Java 8 are really a game changer. From years java syntax has not changed much, and while one could even not note Java 7 in that regards, version 8 brought refreshment. If you want to be more productive, make your code more readable and clean, you simply cannot walk next to Java8 features. The Lambda expressions as well as streams helps to reduce the boiler plate in the code and makes it simpler. There is a lot more to use, but the bottom line is that, once you try it, you will never want to go back.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m going to put some thoughts on the actual content of this book in the nearest future.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Why it’s worth to contribute to opensource</title>
-      <link>http://rkrysinski.pl/post/why-its-worth-to-contribute-to-opensource/</link>
-      <pubDate>Sat, 06 Dec 2014 09:56:54 +0100</pubDate>
-      
-      <guid>http://rkrysinski.pl/post/why-its-worth-to-contribute-to-opensource/</guid>
-      <description>&lt;p&gt;If you ever wondered why people are spending their free time, after hours, in the nights contributing to opensource, then this article might give you some answers in this regards.
-Besides some obvious reasons like you can learn something, I noticed two key factors that were not so obvious for me before.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;There is a freedom in choosing the topic you want to handle. I like programing and I like what I’m doing at work, however sometimes projects are not as fascinating as I would expect. I’m not sure how about you, but I think in most of cased people simply cannot do exactly what they love at work all the time, for various reasons. If you do however then you are a lucky one, but for me it’s not the case. The opensource world is very wide, there are tons of projects out there that solve problems, bring the value to the community etc. If you like programing, some specific technology, language or topics, there is for sure an opensource project for you - you simply can choose one and do what you like. Compare it to the case where you can pick a cake and get the cherries all the time.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Constructive feedback is one of the most important things if you want to do progress. Most people tend to mislead constructive feedback with criticism, but you have to learn to distinguish between these two, and recognize it properly. Sometimes it’s hard for me as well, it really depends upon the quality of feedback, but if you are confident with what you know, who you are and have open attitude you’ll learn what is what. In opensource world, the feedback may take different forms. My favorite one is rework. The biggest complement for me is when my code becomes part of the official stream without additional changes, but there are features that require rework or key owners introduces some refactoring, and this I’m considering as constructive feedback. You can learn from this, because you see what was done well, and what could be done better, thus you can take an advantage from this and does it better next time. It’s as simple as saying: you would be better playing with betters.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I’m sure there are other profits from opensource contribution that you may face, but I encourage you to try on your own. Take a moment and think about what you like the most, look around and pick one for you, you are risking only your free time, and that you may learn something new.&lt;/p&gt;
 </description>
     </item>
     
