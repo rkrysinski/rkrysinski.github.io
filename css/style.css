@@ -332,11 +332,11 @@ blockquote {
   text-decoration: none;
 }
 
-.main ul {  
+section#main ul {  
   margin: 0;
 }
 
-.main ul li {  
+section#main ul li {  
     text-align: center;
 }
 
