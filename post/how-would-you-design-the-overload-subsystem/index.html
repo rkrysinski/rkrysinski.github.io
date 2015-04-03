@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How would you design the overload (sub)system?</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="How would you design the overload (sub)system?"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">  
+    <meta name="author" content="Roman Krysinski">
+
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+	<script src="/js/webfont.js"></script> 
+    
+    <link rel="shortcut icon" href="/images/favicon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://rkrysinski.pl/post/how-would-you-design-the-overload-subsystem/">
+    
+    <link href="" type="application/atom+xml" rel="alternate" title="rkrysinski">  
+    
+    <script>
+        WebFont.load({
+          google: {
+            families: ['Raleway']
+          }
+        });
+    </script>     	
+
+    
+    	
+
+</head>
+<body>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-60993723-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+
+	
+	<div class="navbar navbar-fixed-top">        
+	  <div id="navbar-inner">
+		  <div id="logo">
+			<a href="/"><img src="/images/me.jpg"></img></a>
+			  <div id="navbar-buttons">
+				<a class="social linkedin" title="linkedin" href="http://pl.linkedin.com/in/rkrysinski">LinkedIn</a>
+				<a class="social github" title="github" href="https://github.com/rkrysinski">LinkedIn</a>					
+				<a class="social rss" title="RSS" href="/index.xml">RSS</a>
+			  </div>			
+		  </div>
+		  <div id="logo">
+			  <a href="/"><span>Main</span></a>
+			  -          
+			  <a href="/about"><span>About</span></a>
+			  -
+			  <a href="/tags"><span>Tags</span></a>
+		  </div>
+	  </div>
+	  
+	</div>
+
+	<div class="container">
+
+
+
+	       
+	<div class="post-margin">
+	<div class="div-table post">
+		<div class="div-table-row">
+			<div class="div-table-col left title">
+				<a href="/post/how-would-you-design-the-overload-subsystem/">How would you design the overload (sub)system?</a>
+			</div>
+			<div class="div-table-col right">
+				
+					<time class="post-time">April 3 2015</time>  
+				
+			</div>
+		</div>
+		<div class="div-table-row">                
+			<div class="div-table-col right tags">
+				
+					<a href="/tags/core">core</a>              
+				
+					<a href="/tags/thoughts">thoughts</a>              
+				
+			</div> 
+		</div>
+	</div>
+	</div>     
+	<hr>
+	<div class="post-content post">
+		<p>I would define the overload subsystem as a mechanism to detect and handle cases where the system reaches its limits in terms of free CPU cycles. Let’s assume for simplicity that we have one Linux machine with one service e.g. Web Service. The overload subsystem is not as simple as measuring the CPU consumption and logging an overload case or sending an SNMP trap to external monitoring system with detailed information. High consumption of CPU does not always mean we are in trouble, there is a big difference between a case where system is in overload during so called “busy hours”, and a case where system is in overload and does not handle any traffic. In a first case there is reason for higher CPU consumption, while in the second, no reason. So how we can distinguish between those two cases measuring CPU usage in the system? And how we can fight with overload in each case?</p>
+
+<p>First of all, the overload mechanism needs to know what’s going on in the system. In our case, where we have a Linux box, it needs to know the shape of service. That means our Web Service must measure the current traffic e.g. served requests per second. Then we need to figure out what is the highest rate that our Web Service can handle on a production like machine. Now, our overload subsystem has opened eyes, having two kind of information about CPU consumption and current traffic, we are able to distinguish whether or not the system is healthy. In general, the information is the key, the more you know about your product in terms of measurements and capacity, your eyes are opened wider. On top of that you can build more sophisticated detection mechanisms. So, if we are in overload, but no traffic is detected, then we are in trouble, nothing much to do other than collect information for debugging and perhaps restart service. However in case there is high traffic, what can we do to fight with overload?</p>
+
+<p>You have to have a control over what your software is doing. The easiest way to fight with overload is to slow down, it’s like you are tired while running, slowing down. You can achieve that by implementing so called throttling mechanism - nothing else but simple sleep between handled requests. Going back to our Web Service example, we know it measures the traffic rate, but it also has to know the current CPU usage. When reaching the overload in “busy hour”, the service can enable the throttling. The current CPU consumption can be the feedback to the throttling to increase or decrease the pause between the requests. It may sounds oddly at first glance, one may ask: why to pause, while we can serve another requests during this time, let the system handle the mess. One of the most important goals of an overload subsystem, is to not let the overload to happen. No one likes to be exposed to tough conditions, the same is with computers, strange things can happen during overload including hardware disasters.</p>
+
+<p>There are also other aspects of dealing with high traffic during the overload. Depending upon the nature of a traffic, whether on the other side is machine or human, we can use different request queuing. For machine to machine FIFO may be enough, while for http server better choice would be to use LIFO. The human factor in the second case is that people tend to hit F5 in browser when content is not showing, and LIFO in this particular situation increase the probability that user gets the content on the screen faster (when in case of FIFO). You may also decide to drop some requests, but that really depends upon what service is doing.</p>
+
+<p>At the beginning I’ve made the assumption about single box and single service, but we can proceed in the same way in case we have multiple services on single machine. We can extend the described solution to define different level of overloads e.g. 60% of CPU usage - overload level #1, 70% overload level #2 etc. and define the prioritization of services, so in each overload level, particular services may turn on or off the throttling mechanism or even suspend. In real time processing systems e.g. voice systems, the top priority is to handle call traffic and “nothing else matters”.</p>
+
+<p>There is no golden rule in designing the overload subsystem, if you have such requirements however, the most important thing to remember is that in order to know whether or not your product is in overload, you must measure your core components to figure out if there is a reason for that. The mechanisms of fighting with overload may vary, but there are some, and you can do something in case of overload.</p>
+
+		<nav id="pagination">
+			
+			<a class="next" href="http://rkrysinski.pl/post/look-and-feel/">Next</a>
+		</nav> 
+		<hr>
+		
+			<div class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+         
+        var disqus_shortname = 'rkrysinskipl';
+        
+         
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+		              
+	</div>
+	
+    </div>
+<footer>
+    Copyright © 2015 - Roman Krysinski - build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+    <p>Inspiration and design credit: <a href="https://github.com/AlexFinn/simple-a">Alexander Ivanov</a></p>
+</footer>
+
+<script type="text/javascript">
+     
+    var disqus_shortname = 'rkrysinskipl';
+    
+     
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>    
+</body>
+</html>
+
