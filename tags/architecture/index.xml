@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java on rkrysinski</title>
-    <link>http://rkrysinski.pl/tags/java/</link>
-    <description>Recent content in Java on rkrysinski</description>
+    <title>Architecture on rkrysinski</title>
+    <link>http://rkrysinski.pl/tags/architecture/</link>
+    <description>Recent content in Architecture on rkrysinski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Aug 2015 23:19:23 +0200</lastBuildDate>
-    <atom:link href="http://rkrysinski.pl/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://rkrysinski.pl/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Devoxx Poland</title>
@@ -67,44 +67,6 @@
 &lt;h2 id=&#34;containers:bfd781eddc44741f4390f391fe348419&#34;&gt;&lt;strong&gt;Containers&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;The container term pops up recently with a Docker, and because the &amp;lsquo;lightweight VMs&amp;rsquo; are bringing so much value, containers focuses an attention of the world. It was quite surprising for me to learn that the concept of lightweight virtual machine is quite old. Google is being doing this for long time. The tools to manipulate environment of a process eg. to assign certain amount of CPU, memory or create dedicated filesystem, were in Linux long before Docker was born. The problem was that those were separate tools, which had to be configured  differently to create a container. What Docker did was they put all the pieces together, simplify things, and now you can achieve the same with one command, sweet! But since Google is being doing this for such long time, they decided to share the lessons learned and introduced &lt;a href=&#34;http://kubernetes.io/&#34;&gt;Kubernetes&lt;/a&gt;. It’s a system to manage containerized applications across multiple hosts in a cluster. It handles deployment of containerized/microservice-based applications, and so far it supports Docker and Rocket. One thing I noticed is that Google proposes to change the mindset of seeing the container. You have to stop thinking of a container in terms of virtual machine, instead, expect that container can die (and that&amp;rsquo;s normal thing) simply run another one. Summing up, Google noticed that Docker is missing the software to manage the containers&amp;rsquo; ecosystem and they decided to address the gap by Kubernetes - it is very easy, powerful and has a potential.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>JUnit tests may improve.... you</title>
-      <link>http://rkrysinski.pl/post/junit-tests-may-improve-you/</link>
-      <pubDate>Mon, 23 Mar 2015 21:55:46 +0100</pubDate>
-      
-      <guid>http://rkrysinski.pl/post/junit-tests-may-improve-you/</guid>
-      <description>&lt;p&gt;At first glance we may state that JUnit tests are good because they test our code, they are good because they prove that what we did works, but that is only one side of it.&lt;/p&gt;
-
-&lt;p&gt;A while ago I was told to write test for old legacy code and after couple of days I end up with 20% coverage, simply speaking I failed. When my tests started to look like Frankenstein I told to myself that it makes no sense. I was wondering what&amp;rsquo;s wrong with me, and came into conclusion that the problem is somewhere else. It was like a snow ball coming into my face, the production code was simple not object oriented enough and not well crafted. So, if you ever come into conclusion that writing some JUnit test is difficult, it may mean you&amp;rsquo;ve just got a feedback to your code.&lt;/p&gt;
-
-&lt;p&gt;When you write tests long enough, you will notice that you code become more modular, divided into layers, you start using dependency injection and suddenly the code is simple to cover with tests. But that&amp;rsquo;s not all, good JUnit tests might be better than javadocs. When you want to learn about some API usage, tests might be a good place to start, of course javadocs as well, however an example, is like &amp;ldquo;a picture&amp;rdquo; - worth of thousand words. So going further, tests need to be simple and readable. Each test has to be focused on testing one case, it is also a good practice to divide it into Given/When/Then section, use  mocking techniques and advanced assertions (like catch-exception, assertj or hamcrest) that increases the readability a lot, and don&amp;rsquo;t worry if test name is more than 20 characters long.&lt;/p&gt;
-
-&lt;p&gt;Is that all? Well, if you code and test long enough within you domain e.g. databases or APIs, you should try to write JUnit test first. Soon you will notice that it&amp;rsquo;s not the code that comes first, it&amp;rsquo;s the design that you have to envision in first place.&lt;/p&gt;
-
-&lt;p&gt;Putting all this together: writing JUnit tests not only can improve your programming skills, but also can improve the way you are designing your code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Java8 - the game changer</title>
-      <link>http://rkrysinski.pl/post/java8-the-game-changer/</link>
-      <pubDate>Wed, 18 Mar 2015 10:27:55 +0100</pubDate>
-      
-      <guid>http://rkrysinski.pl/post/java8-the-game-changer/</guid>
-      <description>&lt;p&gt;Couple of weeks ago, I have won a book on &lt;a href=&#34;http://torun.jug.pl/&#34;&gt;Torun JUG&lt;/a&gt; meetup, where I could pick one by myself :) My natural choice was to get something from Java, and after a while I come up with: &amp;ldquo;&lt;em&gt;Java 8 Lambdas.
-Functional Programming for the Masses&lt;/em&gt;&amp;rdquo; by Richard Warburton.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://rkrysinski.pl/images/2015/03/18/java8-lambdas.gif&#34; alt=&#34;example image&#34; title=&#34;Java 8 Lambdas. Functional Programming for the Masses&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;That was a perfect match. This book is very well crafted, easy to understood, it has lots of helpful examples and meaningful pictures that help to visualize complex topics, thus it&amp;rsquo;s easy to remember. This book is written in a way, that after you finish with it, you can easily go back and find topics you want.&lt;/p&gt;
-
-&lt;p&gt;The features brought by Java 8 are really a game changer. From years java syntax has not changed much, and while one could even not note Java 7 in that regards, version 8 brought refreshment. If you want to be more productive, make your code more readable and clean, you simply cannot walk next to Java8 features. The Lambda expressions as well as streams helps to reduce the boiler plate in the code and makes it simpler. There is a lot more to use, but the bottom line is that, once you try it, you will never want to go back.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m going to put some thoughts on the actual content of this book in the nearest future.&lt;/p&gt;
 </description>
     </item>
     

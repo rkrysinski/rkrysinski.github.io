@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Devoxx Poland</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Devoxx Poland"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">  
+    <meta name="author" content="Roman Krysinski">
+
+    <link href="/css/milk.min.css" rel="stylesheet">
+    <link href="/css/milk-responsive.min.css" rel="stylesheet">     
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+	<script src="/js/webfont.js"></script> 
+    
+    <link rel="shortcut icon" href="/images/favicon.ico"> 
+    <link rel="apple-touch-icon" href="">
+    <link rel="canonical" href="http://rkrysinski.pl/post/devoxx-poland/">
+    
+    <link href="" type="application/atom+xml" rel="alternate" title="rkrysinski">  
+    
+    <script>
+        WebFont.load({
+          google: {
+            families: ['Raleway']
+          }
+        });
+    </script>     	
+
+    
+    	
+
+</head>
+<body>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-60993723-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+
+	
+	<div class="navbar navbar-fixed-top">        
+	  <div id="navbar-inner">
+		  <div id="logo">
+			<a href="/"><img src="/images/me.jpg"></img></a>
+			  <div id="navbar-buttons">
+				<a class="social linkedin" title="linkedin" href="http://pl.linkedin.com/in/rkrysinski">LinkedIn</a>
+				<a class="social github" title="github" href="https://github.com/rkrysinski">LinkedIn</a>					
+				<a class="social rss" title="RSS" href="/index.xml">RSS</a>
+			  </div>			
+		  </div>
+		  <div id="logo">
+			  <a href="/"><span>Main</span></a>
+			  -          
+			  <a href="/about"><span>About</span></a>
+			  -
+			  <a href="/tags"><span>Tags</span></a>
+		  </div>
+	  </div>
+	  
+	</div>
+
+	<div class="container">
+
+
+
+	       
+	<div class="post-margin">
+	<div class="div-table post">
+		<div class="div-table-row">
+			<div class="div-table-col left title">
+				<a href="/post/devoxx-poland/">Devoxx Poland</a>
+			</div>
+			<div class="div-table-col right">
+				
+					<time class="post-time">August 5 2015</time>  
+				
+			</div>
+		</div>
+		<div class="div-table-row">                
+			<div class="div-table-col right tags">
+				
+					<a href="/tags/java">java</a>              
+				
+					<a href="/tags/thoughts">thoughts</a>              
+				
+					<a href="/tags/architecture">architecture</a>              
+				
+			</div> 
+		</div>
+	</div>
+	</div>     
+	<hr>
+	<div class="post-content post">
+		
+
+<p>It was very challenging three days at Devoxx in Krakow in terms learning, so many things in three days&hellip; it was almost impossible to ingest all this knowledge. Looking back on all the talks I can tell that there were couple of topics that were touched/discussed very often:</p>
+
+<ol>
+<li>Functional programming</li>
+<li>Microservices</li>
+<li>Containers</li>
+<li>Soft skills talks about culture at work, coding, architecture of code etc.</li>
+</ol>
+
+<p></br>
+<img src="/images/2015/08/05/devoxx.jpg" alt="Devoxx Poland" title="Devoxx" />
+</p>
+
+<h2 id="functional-programming:bfd781eddc44741f4390f391fe348419"><strong>Functional programming</strong></h2>
+
+<p>Functional programming becomes more and more popular, but why? Is not something new, I remember learning Haskell at university a long time ago, it was part of the theory to learn, but nothing else. OK Haskell is so pure functional programming, that it is useless in terms of writing production code, but the techniques were available e.g in Java Script or Python for quite long time, so why functional programming and why now? I’m not sure, but I think if people are using it, then there is a value, and I captured at least the following:</p>
+
+<ol>
+<li>lazy evaluations - can foster better performance and robustness</li>
+<li>lambdas - can reduces boilerplate,</li>
+<li>monats - chaining functions - e.g. helps to solve so called &lsquo;callback hell&rsquo;</li>
+</ol>
+
+<p>All of this helps to solve problems easily than in pure object oriented programming world.</p>
+
+<h2 id="microservices:bfd781eddc44741f4390f391fe348419"><strong>Microservices</strong></h2>
+
+<p>Microservices also become more and more popular as an alternative to monolith architecture. It is nice concept of putting subsystems into separate processes with e.g. REST API, so they can communicate with each other and do the job. In other words, you have to decompose your system into small manageable isolated pieces encapsulated in a process, and processes have to communicate with each other using APIs. The value in this architecture is scalability. In many cases, when designing a product, it’s hard to predict in first place which part of software become a bottleneck in a future. This architecture gives kind of confidence, that when you need to increase a performance of some particular part of your application, you simply multiply the appropriate microservice. So the scalability is something relatively easy to achieve. There are also other, not so obvious at first glance benefits:</p>
+
+<ol>
+<li>integration testing is pretty straight forward, because all you need to check is whether or not your REST API is working as expected,</li>
+<li>refactoring of an product as a whole is much more simpler,</li>
+<li>and probably more&hellip;</li>
+</ol>
+
+<p>It looks that such architecture is more agile, but there is a drawback - of course as always, because there is no Silver Bullet architecture. There is a price you have to pay. You have to invest in automation and in infrastructure a lot. If you have 5 microservices then probably you can leave without it, but if you have more, then you must manage those, and not by hand. There are several areas to focus on, in order to make this task a little bit easier:</p>
+
+<ol>
+<li>&lsquo;who am I&rsquo; API - beyond the designed API of microservice, each and single one have to expose version, type, status etc.</li>
+<li>automatic deployment</li>
+<li>monitoring</li>
+</ol>
+
+<p>Indeed there is some overhead of work you have to do in comparison to monolith architecture. It’s clear that if you have the same functionality in one piece, it is less work with deploy, less monitoring, less versioning, less things to manage, less maintenance and easier debugging.</p>
+
+<p>One way or the other, there is something in this architecture I must admit, but as always there are two sides of the coin, be pragmatic and choose wisely: if this architecture make sense for your case, then let it be, but do not choose it just because it’s trendy.</p>
+
+<h2 id="containers:bfd781eddc44741f4390f391fe348419"><strong>Containers</strong></h2>
+
+<p>The container term pops up recently with a Docker, and because the &lsquo;lightweight VMs&rsquo; are bringing so much value, containers focuses an attention of the world. It was quite surprising for me to learn that the concept of lightweight virtual machine is quite old. Google is being doing this for long time. The tools to manipulate environment of a process eg. to assign certain amount of CPU, memory or create dedicated filesystem, were in Linux long before Docker was born. The problem was that those were separate tools, which had to be configured  differently to create a container. What Docker did was they put all the pieces together, simplify things, and now you can achieve the same with one command, sweet! But since Google is being doing this for such long time, they decided to share the lessons learned and introduced <a href="http://kubernetes.io/">Kubernetes</a>. It’s a system to manage containerized applications across multiple hosts in a cluster. It handles deployment of containerized/microservice-based applications, and so far it supports Docker and Rocket. One thing I noticed is that Google proposes to change the mindset of seeing the container. You have to stop thinking of a container in terms of virtual machine, instead, expect that container can die (and that&rsquo;s normal thing) simply run another one. Summing up, Google noticed that Docker is missing the software to manage the containers&rsquo; ecosystem and they decided to address the gap by Kubernetes - it is very easy, powerful and has a potential.</p>
+
+		<nav id="pagination">
+			
+			<a class="next" href="http://rkrysinski.pl/post/how-would-you-design-the-overload-subsystem/">Next</a>
+		</nav> 
+		<hr>
+		
+			<div class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+         
+        var disqus_shortname = 'rkrysinskipl';
+        
+         
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
+		              
+	</div>
+	
+    </div>
+<footer>
+    Copyright © 2015 - Roman Krysinski - build with <a href="https://github.com/spf13/hugo">Hugo</a> 
+    <p>Inspiration and design credit: <a href="https://github.com/AlexFinn/simple-a">Alexander Ivanov</a></p>
+</footer>
+
+<script type="text/javascript">
+     
+    var disqus_shortname = 'rkrysinskipl';
+    
+     
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>    
+</body>
+</html>
+
